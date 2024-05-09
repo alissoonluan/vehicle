@@ -28,8 +28,6 @@ export class PrismaVehicleRepository implements VehicleRepository {
       } as unknown as VehicleWhereUniqueInput;
     }
 
-    console.log(findUniqueInput, '@@@');
-
     const vehicle = await this.prisma.vehicle.findUnique({
       where: findUniqueInput,
     });

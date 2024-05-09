@@ -102,4 +102,8 @@ export class Vehicle {
       updatedAt: new Date(),
     };
   }
+
+  public delete() {
+    this.props.deletedAt = new Date();
+  }
 }

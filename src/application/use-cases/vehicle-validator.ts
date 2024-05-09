@@ -1,4 +1,3 @@
-// vehicle-validator.ts
 import { Injectable } from '@nestjs/common';
 import { VehicleRepository } from '../repositories/vehicle-repository';
 import {

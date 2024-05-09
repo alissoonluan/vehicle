@@ -15,6 +15,7 @@ export class DeleteVehicleUsecase {
     if (!vehicleExists) {
       throw new VehicleNotFound();
     }
+    vehicleExists.delete();
     await this.vehicleRepository.delete(id);
   }
 }
