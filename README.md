@@ -39,7 +39,12 @@ A step-by-step series of examples that tell you how to get a development environ
    npx prisma generate
    ```
 
-5. Start the application:
+2. Start the container:
+   ```bash
+   docker-compose up
+   ```
+
+6. Start the application:
    ```bash
    npm run start
    ```
