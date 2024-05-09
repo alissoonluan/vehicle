@@ -55,6 +55,15 @@ To run the unit tests:
 npm run test
 ```
 
+### Running the coverage
+
+To run the coverage:
+```bash
+npm run test:cov
+```
+Navigate to the coverage folder using your file explorer or terminal.
+Open the index.html file in a web browser.
+
 ## Using the API
 
 You can access the API documentation through the Swagger interface to view and interact with the available endpoints. Below are some of the API endpoints you can access:
