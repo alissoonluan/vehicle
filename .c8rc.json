@@ -1,0 +1,14 @@
+{
+  "include": [
+    "src/application/use-cases/**",
+    "src/application/entities/**"
+  ],
+  "exclude": [
+    "**/*.spec.ts",
+    "src/application/use-cases/errors"
+  ],
+  "reporter": [
+    "text",
+    "lcov"
+  ]
+}

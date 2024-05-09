@@ -1,0 +1,19 @@
+services:
+  backend-cache:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+    container_name: backend-cache
+    restart: always
+    volumes:
+      - ./data/redis-data:/data
+    mem_limit: 0.5g
+    environment:
+      - REDIS_HOST=${REDIS_HOST}
+      - REDIS_PORT=${REDIS_PORT}
+      
+
+networks:
+  default:
+    name: backend-cache-network
+    external: true
